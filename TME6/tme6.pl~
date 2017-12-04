@@ -1,0 +1,1 @@
+concatene(X, Y, Z) := [X, Y]
