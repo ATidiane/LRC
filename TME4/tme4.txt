@@ -1,0 +1,48 @@
+ TME 4          LRC
+
+Binôme 1: Anissa Kheireddine
+Binôme 2: Ahmed Tidiane BALDE
+
+
+-Exercice 1: 
+
+-Question 2:
+          (i)   On observe que la structure obtenu est vide car l'annonce est fausse dans tous les
+                mondes qui sont accessibles pour l'agent a.
+          (ii)  On observe que la structure obtenu ne change pas car l'annonce est vraie dans tous
+                mondes accessibles pour l'agent a.
+
+-Question 3*:
+
+1) Pour la première séquence, les joueurs peuvent savoir quelle carte possède chacun:
+   a = R;
+   b = V;
+   c = J.
+
+2) Pour la seconde séquence, les modifications apportées à chaque étape sont les suivantes:
+   On supprime les mondes:
+                            -RVJ et VRJ
+                            -RJV et VJR
+                            -JVR
+   A la fin on obtient que le monde JRV.
+
+4) Oui le résultat final dépend bien de l'ordre des annonces.
+
+-Exercice 2:
+
+Question 2*:
+   Pour un agent i, la date d'anniversaire se définit comme étant une disjonction sur tous les mondes
+   de la structure de Kripke.
+
+Question 3:
+   Les modifications apportées à chaque étape sont les suivantes:
+   On supprime les mondes:
+                            - 15, 16 et 19 Mai et 17, 18 Juin
+                            - 14 Juillet et Août
+                            - 14, 15 et 17 Août
+
+
+Récréation:
+
+-Exercice 3:
+Pour la semaine prochaine.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 COMPTE RENDU TME 1
 
 BALDE AHMED TIDIANE
@@ -5,6 +6,15 @@ KHEIREDDINE ANISSA
 
 N°Etudiant : 3502069
 N°Etudiant : 3502264
+=======
+COMPTE RENDU TME 5
+
+BALDE AHMED TIDIANE      N°Etudiant : 3502264
+KHEIREDDINE ANISSA       N°Etudiant : 3502069
+
+
+
+>>>>>>> b1b544c2f5ceede59a9dedb109b2dc823da949a5
 
 
 
@@ -97,6 +107,7 @@ et(0, 0, R): R = 0
 et(X, Y, R): tableau de vérité du connecteur logique "et"
 ou(X, Y, R): tableau de vérité du connecteur logique "ou"
 
+<<<<<<< HEAD
 3) 
 circuit(X, Y, 0) :- non(A, 1), xor(B,C,A), non(X, B), nand(X, Y, C).
 circuit(X, Y, 1) :- non(A, 0), xor(B,C,A ), non(X, B), nand(X, Y, C).
@@ -104,3 +115,58 @@ circuit(X, Y, 1) :- non(A, 0), xor(B,C,A ), non(X, B), nand(X, Y, C).
 4)
 circuit(X, Y, 0).
 circuit(X, Y, 1).
+=======
+3) Prédicat circuit/3:
+nand(0,0,1).
+nand(1,0,1).
+nand(0,1,1).
+nand(1,1,0).
+xor(0,0,0).
+xor(0,1,1).
+xor(1,0,1).
+xor(1,1,0).
+circuit(X, Y, 0) :- non(A, 1), xor(B,C,A), non(X, B), nand(X, Y, C).
+circuit(X, Y, 1) :- non(A, 0), xor(B,C,A ), non(X, B), nand(X, Y, C).
+
+4) Requête permettant de construire la table de vérité du circuit:
+circuit(X, Y, 0).
+circuit(X, Y, 1).
+
+5) Tests de différents types de requêtes:
+?- circuit(0,1,Z).
+Z = 0 ;
+false.
+
+?- circuit(0,0,Z).
+Z = 0 ;
+false.
+
+?- circuit(1,1,Z).
+Z = 0 ;
+false.
+
+?- circuit(1,0,Z).
+Z = 1 ;
+false.
+
+?- circuit(0,1,Z).
+Z = 0 ;
+false.
+
+?- circuit(0,0,Z).
+Z = 0 ;
+false.
+
+?- circuit(1,1,Z).
+Z = 0 ;
+false.
+
+?- circuit(1,0,Z).
+Z = 1 ;
+false.
+
+?- circuit(X,0,Z).
+X = Z, Z = 0 ;
+X = Z, Z = 1 ;
+false.
+>>>>>>> b1b544c2f5ceede59a9dedb109b2dc823da949a5
