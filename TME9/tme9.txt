@@ -1,0 +1,32 @@
+Exercice 2 :
+
+3*/ Tout d'abord, nous remarquons que le réseau de Pétri est borné, non vivant, ni reversible.
+
+Il est constitué de 2 composantes fortement connexes {3}, {0,2,1}.
+4/ Il n'y a aucune transition vivante dans ce réseau. Cependant on observe un marquage puits : (0,1,0,0)
+
+5/ Le graphe est quasi-vivant s'il n'existe pas de marquage puit. Ce n'est pas le cas pour ce réseau.
+
+
+Exercice 3 :
+2 * )
+	a) le réseau est complétement vivant. Toutes ses transitions le sont.
+	b) blocage dans la boucle p2 -> t3 -> p3 -> t4.  transitions vivantes : t3, t4
+	c) transitions vivantes : t3, t4
+	d) transitions vivantes : t3, t4  et t1 transistion quasi-vivante.
+
+
+3 * )
+	a) On peut le construire
+
+	b) On peut le construire
+
+	c)Impossible d'avoir un réseau quasi vivant, sans bloquage et reversible non vivant. On ne peut passer au moins une fois par toutes les transitions sans que le réseau ne soit vivant et qu'il soit de plus réversible. Si on souhaite avoir ce genre de réseau, il faut augmenter le poids de l'arc sortant de p1 d'au moins 1.
+
+	d) On peut le construire
+
+
+Exercice 4:
+
+1 * ) Le réseau de Pétri qui modélise le processus de montage d'une voiture en bois se situe dans le fichier exo4.ndt 
+	C'est un réseau borné (si on enlève le point de stockage des jouets fabriqués), vivant et réversible. En donnant comme marquage de départ (4,1,0,0,0,0)

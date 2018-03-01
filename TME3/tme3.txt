@@ -1,0 +1,31 @@
+ TME 3          LRC
+
+
+Exercice 1 : 
+
+1) not and knows P not not knows not knows P : Valide   {not P, K P, P}
+2) and knows P knows knows not P  : insatisfiable
+3) not and knows P not knows knows not P  : Satisfiable { not P}
+
+
+Exercice 2 :
+
+Mq (S5) valide : 
+F: and not and not knows P not knows not knows P not and knows not knows P not not knows P
+valide care not(F) est insatisfiable
+
+Mq (S4) non valide  :  
+F: and not and not nec P not nec not nec P not and nec not nec P not not nec P  
+satisfiable car not(F) n'est pas insatisfiable.
+
+
+Exercice 4 : 
+
+(w1,w2) = { 2 , 3 }
+(w1,w1) = { 2 , 3 }
+(w2,w2) = { 1 , 2 , 3 }
+(w1,w4) = { 3 }
+(w4,w3) = { 3 }
+(w2,w3) = { 3 }
+(w4,w4) = { 1 , 3 }
+(w3,w3) = { 3 }

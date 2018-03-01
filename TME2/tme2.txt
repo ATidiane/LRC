@@ -1,0 +1,35 @@
+Compte rendu du TME2:
+
+Nom: BALDE
+Prenom: Ahmed Tidiane
+Numéro étudiant: 3502264
+
+Exercice 1:
+
+2*) 
+
+createNewNode w1
+createNewNode w2
+link w1 w2 R
+add w1 Q
+add w2 P
+link w2 w2 R
+
+Après avoir construit le modèle, nous pouvons tester:
+add w1 isItTrue and not P nec pos P
+add w1 isItTrue and Q pos pos pos not Q
+
+Et nous remarquons que les deux formules sont vraies.
+
+3) Dans cette question, j’ai appris comment implémenter le connecteur
+d’implication, en définissant les règles “imp_top_down” ainsi que
+“imp left true bottom up”  et “imp right true bottom up”.
+
+Exercice 2:
+
+3*) 
+
+F = imp nec imp P Q imp nec P nec Q)
+
+Pour prouver sa validité on check la satisfiabilité de not(F), comme toutes
+les prémisses sont fausses alors la formule est valide.

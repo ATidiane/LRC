@@ -1,0 +1,52 @@
+COMPTE RENDU TME 1
+
+BALDE AHMED TIDIANE
+KHEIREDDINE ANISSA
+
+N°Etudiant : 3502069
+N°Etudiant : 3502264
+
+
+
+
+
+
+Exercice 1 :
+
+	- requete r(f(f(a)),b) :  
+
+		-r(f(f(a)),b)            -p(X,Y)   v   r(f(X),Y)
+			|__________________________________|
+					|
+				X = f(a)  et Y = b
+					
+				-p(f(a),b)            -r(X,Y)   v   p(f(X),Y)
+			      	    |__________________________________|
+						    |
+						X = a et Y = b
+					-r(a,b)     r(a,b)
+					   |__________|
+						|
+						OK
+
+
+
+	- p(f(a),b) 
+
+		-p(f(a),b)                -r(X,Y)     v p(f(X),Y)
+		    |_______________________________________|
+					|
+				   X = a et Y = b
+				-r(a,b)     r(a,b)
+				   |___________|
+					|
+					OK
+
+
+
+
+Exercice 2 :
+
+2*) q(X,b) :La requête est satisfiable pour X = b 
+    q(b,X) : // //         satisfiable pour X = b
+

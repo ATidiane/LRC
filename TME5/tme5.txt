@@ -1,0 +1,152 @@
+COMPTE RENDU TME 5
+
+BALDE AHMED TIDIANE      N°Etudiant : 3502264
+KHEIREDDINE ANISSA       N°Etudiant : 3502069
+
+
+
+
+
+
+
+
+
+Exercice 1 :
+
+	- requete r(f(f(a)),b) :  
+
+		-r(f(f(a)),b)            -p(X,Y)   v   r(f(X),Y)
+			|__________________________________|
+					|
+				X = f(a)  et Y = b
+					
+				-p(f(a),b)            -r(X,Y)   v   p(f(X),Y)
+			      	    |__________________________________|
+						    |
+						X = a et Y = b
+					-r(a,b)     r(a,b)
+					   |__________|
+						|
+						OK
+
+
+
+	- p(f(a),b) 
+
+		-p(f(a),b)                -r(X,Y)     v p(f(X),Y)
+		    |_______________________________________|
+					|
+				   X = a et Y = b
+				-r(a,b)     r(a,b)
+				   |___________|
+					|
+					OK
+
+
+
+
+Exercice 2 :
+
+2*) q(X,b) :La requête est satisfiable pour X = b 
+    q(b,X) : // //         satisfiable pour X = b
+
+Exercice 4:
+
+1)
+pere(biro, ahmed).
+mere(aissatou, ahmed).
+pere(biro, mariama).
+mere(aissatou, mariama).
+
+2)
+parent(X, ahmed) :- pere(X,ahmed).
+parent(X, ahmed) :- mere(X, ahmed).
+
+3)
+Test: parent(A, B) nous renvoie tous les parents existants dans la base.
+Test: parent(Ahmed, X) nous renvoie false car Ahmed n'a pas d'enfants.
+
+4)
+parent(biro, aissatou, ahmed).
+Test: parent(X, Y, ahmed) nous renvoie X = biro, et Y = aissatou.
+
+5)
+grandpere(saikou, ahmed).
+frereOuSoeur(mariama, ahmed).
+
+6)
+ancetre(X, ahmed) :- grandpere(X, ahmed).
+
+Exercice 5:
+
+1) Définissons les prédicats:
+et(0,0,0).
+et(1,0,0).
+et(0,1,0).
+et(1,1,1).
+ou(0,0,0).
+ou(0,1,1).
+ou(1,0,1).
+ou(1,1,1).
+non(0,1).
+non(1,0).
+
+2) Test des différentes requêtes:
+et(X,Y,1): X = Y, Y = 1.
+et(0, 0, R): R = 0
+et(X, Y, R): tableau de vérité du connecteur logique "et"
+ou(X, Y, R): tableau de vérité du connecteur logique "ou"
+
+3) Prédicat circuit/3:
+nand(0,0,1).
+nand(1,0,1).
+nand(0,1,1).
+nand(1,1,0).
+xor(0,0,0).
+xor(0,1,1).
+xor(1,0,1).
+xor(1,1,0).
+circuit(X, Y, 0) :- non(A, 1), xor(B,C,A), non(X, B), nand(X, Y, C).
+circuit(X, Y, 1) :- non(A, 0), xor(B,C,A ), non(X, B), nand(X, Y, C).
+
+4) Requête permettant de construire la table de vérité du circuit:
+circuit(X, Y, 0).
+circuit(X, Y, 1).
+
+5) Tests de différents types de requêtes:
+?- circuit(0,1,Z).
+Z = 0 ;
+false.
+
+?- circuit(0,0,Z).
+Z = 0 ;
+false.
+
+?- circuit(1,1,Z).
+Z = 0 ;
+false.
+
+?- circuit(1,0,Z).
+Z = 1 ;
+false.
+
+?- circuit(0,1,Z).
+Z = 0 ;
+false.
+
+?- circuit(0,0,Z).
+Z = 0 ;
+false.
+
+?- circuit(1,1,Z).
+Z = 0 ;
+false.
+
+?- circuit(1,0,Z).
+Z = 1 ;
+false.
+
+?- circuit(X,0,Z).
+X = Z, Z = 0 ;
+X = Z, Z = 1 ;
+false.
