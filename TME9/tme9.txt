@@ -1,0 +1,5 @@
+Exercice 2 :
+
+3*/ Tout d'abord, nous remarquons que le réseau de Pétri est borné, ni vivant ni reversible.
+
+Il est constitué de 2 composantes fortement connexes {3}, {0,2,1}.
